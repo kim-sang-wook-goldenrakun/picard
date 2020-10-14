@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>PI Card</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="font-size: 5px" th:each="subject : ${subjects}">
+<!--                <td th:text="${subject.id}"></td>-->
+                <td th:text="${subject.age}"></td>
+                <td th:text="${subject.sex}"></td>
+                <td th:text="${subject.diagnosis}"></td>
+            </tr>
+            <tr style="font-size: 5px" th:each="subject : ${subjects}">
+                <td th:text="${subject.tumorStage}"></td>
+                <td th:text="${subject.recurrence}"></td>
+                <td th:text="${subject.metastasis}"></td>
+                <td th:text="${subject.location}"></td>
+            </tr>
+            <tr style="font-size: 5px" th:each="subject : ${subjects}">
+                <td th:text="${subject.entrostomy}"></td>
+                <td th:text="${subject.operationDate}"></td>
+                <td th:text="${subject.surgery}"></td>
+                <td th:text="${subject.anticancer}"></td>
+            </tr>
+            <tr style="font-size: 5px" th:each="subject : ${subjects}">
+                <td th:text="${subject.anticancerDate}"></td>
+                <td th:text="${subject.radiationTreatment}"></td>
+                <td th:text="${subject.radiationTreatmentDate}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>

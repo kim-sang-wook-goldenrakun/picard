@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PI Card</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<form action="/subjects/new" method="post">
+    <table border="1">
+        <tr>
+            <td>
+                <span> 나이 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="age" value="1"> <40
+                </label>
+                <label>
+                    <input type="radio" name="age" value="2"> >=40, <70
+                </label>
+                <label>
+                    <input type="radio" name="age" value="3"> >=70
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 성별 </span>
+            </td>
+            <td>
+                <div>
+                    <label>
+                        <input type="radio" name="sex" value="Male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="Female"> Female
+                    </label>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 진단명 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="diagnosis" value="직장암"> 직장암
+                </label>
+                <label>
+                    <input type="radio" name="diagnosis" value="결장암"> 결장암
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 병기 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="tumorStage" value="1기"> 1기
+                </label>
+                <label>
+                    <input type="radio" name="tumorStage" value="2기"> 2기
+                </label>
+                <label>
+                    <input type="radio" name="tumorStage" value="3기"> 3기
+                </label>
+                <label>
+                    <input type="radio" name="tumorStage" value="4기"> 4기
+                </label>
+                <label>
+                    <input type="radio" name="tumorStage" value="잘 모름"> 잘 모름
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 재발여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="recurrence" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="recurrence" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 전이여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="metastasis" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="metastasis" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 원격전이위치 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="text" name="location">
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 장루여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="entrostomy" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="entrostomy" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 수술여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="operation" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="operation" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 수술날짜 </span>
+            </td>
+            <td>
+                <div>
+                    <input type="date" name="operationDate"/>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 수술부위 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="surgery" value="대장"> 대장
+                </label>
+                <label>
+                    <input type="radio" name="surgery" value="대장 외"> 대장 외
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 항암여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="anticancer" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="anticancer" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 항암날짜시작 </span>
+            </td>
+            <td>
+                <div>
+                    <input type="date" name="anticancerDate"/>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 방사선치료여부 </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="radiationTreatment" value="있음"> Y
+                </label>
+                <label>
+                    <input type="radio" name="radiationTreatment" value="없음"> N
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span> 방사선치료날짜 </span>
+            </td>
+            <td>
+                <div>
+                    <input type="date" name="radiationTreatmentDate"/>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <div class="button">
+        <input type="submit">Save</input>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+
+</body>
+</html>
